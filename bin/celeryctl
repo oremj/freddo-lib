@@ -1,0 +1,9 @@
+#!/usr/bin/python26
+# EASY-INSTALL-ENTRY-SCRIPT: 'celery==2.2.5','console_scripts','celeryctl'
+__requires__ = 'celery==2.2.5'
+import sys
+from pkg_resources import load_entry_point
+
+sys.exit(
+   load_entry_point('celery==2.2.5', 'console_scripts', 'celeryctl')()
+)
